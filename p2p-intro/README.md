@@ -1,6 +1,6 @@
 # P2P intro — Lab TIC DIINF
 
-Enunciado: [`activity_1.pdf`](activity_1.pdf) (fuente LaTeX: `activity_1.tex`).
+Enunciado: [`activity_1.pdf`](activity_1.pdf).
 
 Repositorio canónico: [github.com/miguelcarcamov/lab_experiences](https://github.com/miguelcarcamov/lab_experiences)
 

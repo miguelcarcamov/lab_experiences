@@ -1,10 +1,12 @@
 __pycache__/
 *.py[cod]
-*.pdf.aux
-*.pdf.log
-*.pdf.out
-*.pdf.fls
-*.pdf.fdb_latexmk
+
+# LaTeX (solo se publica el PDF; compilar fuera del repo)
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
 *.synctex.gz
 
 # Generados por los grupos en el lab (no versionar)
