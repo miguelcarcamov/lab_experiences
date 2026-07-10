@@ -80,16 +80,6 @@ def select_next_piece(
     # TODO: implementar aquí
     raise NotImplementedError("Complete select_next_piece() antes de usar fetch")
 
-    # --- Pista opcional (el docente puede mostrarla o no) ---
-    # Estrategia secuencial trivial:
-    # for indice in range(total_pieces):
-    #     if indice in my_pieces:
-    #         continue
-    #     for peer in peers_info:
-    #         if indice in peer.get("pieces", []):
-    #             return peer, indice
-    # return None
-
 
 # ---------------------------------------------------------------------------
 # Piezas locales
