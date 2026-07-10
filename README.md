@@ -10,11 +10,10 @@ Experiencias de laboratorio del curso. Cada carpeta contiene enunciado (PDF + La
 
 ## Uso (estudiantes)
 
-1. Hacer **fork** de este repositorio en GitHub.
+1. Hacer **fork** de este repositorio en GitHub (un fork por grupo).
 2. Clonar **su fork** en las máquinas del laboratorio.
-3. Trabajar en una rama por grupo, por ejemplo `grupo-1/p2p-intro`.
-4. Implementar solo lo indicado en cada enunciado (en P2P: `select_next_piece` en `node.py`).
-5. No subir `demo.bin`, `payload/` ni `piezas/` generados en clase (ver `.gitignore`).
+3. Implementar solo lo indicado en cada enunciado (en P2P: `select_next_piece` en `node.py`) y commitear en `master`.
+4. No subir `demo.bin`, `payload/` ni `piezas/` generados en clase (ver `.gitignore`).
 
 ```bash
 git clone git@github.com:<tu-usuario>/lab_experiences.git

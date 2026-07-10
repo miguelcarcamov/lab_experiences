@@ -8,8 +8,8 @@ Repositorio canónico: [github.com/miguelcarcamov/lab_experiences](https://githu
 
 1. Fork en GitHub → `https://github.com/<tu-usuario>/lab_experiences`
 2. `git clone git@github.com:<tu-usuario>/lab_experiences.git`
-3. `cd lab_experiences/p2p-intro && git checkout -b grupo-N/p2p-intro`
-4. Implementar `select_next_piece()` en `node.py` y commitear.
+3. `cd lab_experiences/p2p-intro`
+4. Implementar `select_next_piece()` en `node.py` y commitear en `master`.
 
 ## Preparar el archivo (grupo)
 

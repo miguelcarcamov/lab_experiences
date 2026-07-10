@@ -42,8 +42,7 @@ Cada grupo debe:
 git clone git@github.com:<usuario>/lab_experiences.git
 cd lab_experiences/p2p-intro
     \end{verbatim}
-    \item Crear una rama de trabajo, por ejemplo \texttt{grupo-2/p2p-intro}.
-    \item Implementar \texttt{select\_next\_piece} en \texttt{node.py} y commitear en esa rama.
+    \item Implementar \texttt{select\_next\_piece} en \texttt{node.py} y commitear en \texttt{master} de su fork.
     \item No subir artefactos generados en el lab (\texttt{demo.bin}, \texttt{payload/}, \texttt{piezas/}); el \texttt{.gitignore} ya los excluye.
 \end{enumerate}
 
@@ -88,7 +87,7 @@ La reconstrucción es correcta si \texttt{recuperado.bin} tiene el mismo SHA-256
 
 \subsection{Por qué el ejercicio es \texttt{select\_next\_piece}}
 
-La plomería de red ya está resuelta en \texttt{node.py}. Lo pedagógico es \textbf{decidir a qué peer pedir qué pieza} (secuencial, \emph{rarest-first}, aleatorio, etc.): eso cambia mensajes, tiempos y tolerancia a fallas.
+La configuración de red ya está resuelta en \texttt{node.py}. Lo pedagógico es \textbf{decidir a qué peer pedir qué pieza} (secuencial, \emph{rarest-first}, aleatorio, etc.): eso cambia mensajes, tiempos y tolerancia a fallas.
 
 \section{Desarrollo de la actividad}
 
@@ -103,7 +102,7 @@ Fork y clone del repo; conectar nodos; \texttt{prepare\_payload.py}; copiar \tex
 \addlinespace
 10--40 min &
 Implementación + difusión &
-\textbf{10--15 min:} completar \texttt{select\_next\_piece} y commit en la rama del grupo. \textbf{15--40 min:} \texttt{node.py fetch ...}; anotar tiempos y mensajes. \\
+\textbf{10--15 min:} completar \texttt{select\_next\_piece} y commit en su fork. \textbf{15--40 min:} \texttt{node.py fetch ...}; anotar tiempos y mensajes. \\
 \addlinespace
 40--50 min &
 Inyección de falla &
@@ -139,6 +138,6 @@ Plenario: estrategia, tiempos, mensajes, grafo, efecto de la falla. URL del fork
 Quienes terminen antes pueden probar \emph{rarest-first} o esbozar cómo localizarían piezas sin \texttt{peers.txt} central.
 
 \vspace{0.5cm}
-\noindent\textbf{Entregable mínimo (si aplica):} URL del fork, rama usada, nodos e IPs, estrategia, tiempos y mensajes, reacción ante la falla, grafo de conectividad.
+\noindent\textbf{Entregable mínimo (si aplica):} URL del fork, nodos e IPs, estrategia, tiempos y mensajes, reacción ante la falla, grafo de conectividad.
 
 \end{document}
