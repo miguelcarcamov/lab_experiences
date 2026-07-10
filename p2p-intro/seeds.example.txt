@@ -1,5 +1,5 @@
-# Un nodo por línea: host:puerto_tcp[:node_id]
-# Mismo puerto que node.py serve (8800 por defecto)
+# Semillas (bootstrap): 2-3 nodos conocidos bastan para discover.py
+# Formato: host:puerto_tcp:node_id
 192.168.1.10:8800:pc01
 192.168.1.11:8800:pc02
 192.168.1.12:8800:pc03
