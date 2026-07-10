@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+*.pdf.aux
+*.pdf.log
+*.pdf.out
+*.pdf.fls
+*.pdf.fdb_latexmk
+*.synctex.gz
+
+# Generados por los grupos en el lab (no versionar)
+demo.bin
+payload/
+piezas/
+recuperado.bin
+manifest.json
+seeds.txt
+peers.txt
+cluster_run.log
