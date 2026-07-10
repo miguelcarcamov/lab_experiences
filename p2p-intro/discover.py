@@ -6,7 +6,7 @@ Envía PING por TCP a cada entrada de seeds.txt y lista los peers que responden.
 No tiene TODO: está listo para usar mientras node.py serve corre en cada máquina.
 
 Uso:
-  python3 discover.py --node-id pc01 --seeds seeds.txt
+  python3 discover.py --node-id pc01 --seeds-file seeds.txt
   python3 discover.py --node-id pc01 --seeds 192.168.1.10:8800,192.168.1.11:8800
 """
 from __future__ import annotations
@@ -22,10 +22,11 @@ TIMEOUT = 2.0
 
 
 def parsear_seed(texto: str) -> tuple[str, int]:
+    """Acepta host, host:puerto o host:puerto:node_id (mismo formato que seeds.txt)."""
     texto = texto.strip()
-    if ":" in texto:
-        host, puerto = texto.rsplit(":", 1)
-        return host.strip(), int(puerto)
+    partes = texto.split(":")
+    if len(partes) >= 2:
+        return partes[0].strip(), int(partes[1])
     return texto, PUERTO_DEFAULT
 
 
